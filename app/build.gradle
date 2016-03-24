@@ -1,0 +1,33 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "23.0.2"
+
+    aaptOptions {
+        noCompress "dat"
+    }
+    defaultConfig {
+        applicationId "com.android.inputmethod.pinyin"
+
+        ndk {
+            moduleName "libjni_pinyinime"
+            ldLibs "log"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            ndk {
+                debuggable = true
+            }
+
+        }
+        debug {
+            debuggable = true
+            jniDebuggable = true
+        }
+    }
+}

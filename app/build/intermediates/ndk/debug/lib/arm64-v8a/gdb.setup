@@ -1,0 +1,2 @@
+set solib-search-path /home/slin/AndroidStudioProjects/PinyinIME1/app/build/intermediates/ndk/debug/obj/local/arm64-v8a
+directory /home/slin/Android/Sdk/ndk-bundle/platforms/android-21/arch-arm64/usr/include /home/slin/AndroidStudioProjects/PinyinIME1/app/src/main/jni /home/slin/AndroidStudioProjects/PinyinIME1/app/src/debug/jni /home/slin/Android/Sdk/ndk-bundle/sources/cxx-stl/system/include /home/slin/AndroidStudioProjects/PinyinIME1/app/build/intermediates/ndk/debug
