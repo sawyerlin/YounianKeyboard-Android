@@ -10,6 +10,13 @@ public final class Source {
         Hashtable <String, String> arabicSource = new Hashtable<>();
         source.put(SourceType.Latin, latinSource);
         source.put(SourceType.Arabic, arabicSource);
+        for (Hashtable<String, String> currentSource: source.values()) {
+            for (int i= 0; i < 10; i ++) {
+                currentSource.put("0" + i, "" + i);
+
+            }
+            currentSource.put("99", "www");
+        }
         latinSource.put("11", "a");
         latinSource.put("12", "b");
         latinSource.put("13", "c");
@@ -17,6 +24,10 @@ public final class Source {
         latinSource.put("15", "e");
         latinSource.put("16", "f");
         latinSource.put("17", "g");
+        latinSource.put("18", ",");
+        latinSource.put("19", ".");
+        latinSource.put("10", "?");
+
         latinSource.put("21", "h");
         latinSource.put("22", "i");
         latinSource.put("23", "j");
@@ -24,18 +35,31 @@ public final class Source {
         latinSource.put("25", "l");
         latinSource.put("26", "m");
         latinSource.put("27", "n");
+        latinSource.put("28", "-");
+        latinSource.put("29", ";");
+        latinSource.put("20", "'");
+
         latinSource.put("31", "o");
         latinSource.put("32", "p");
         latinSource.put("33", "q");
         latinSource.put("34", "r");
         latinSource.put("35", "s");
         latinSource.put("36", "t");
+        latinSource.put("37", "[");
+        latinSource.put("38", "]");
+        latinSource.put("39", ";");
+        latinSource.put("30", "'");
+
         latinSource.put("41", "u");
         latinSource.put("42", "v");
         latinSource.put("43", "w");
         latinSource.put("44", "x");
         latinSource.put("45", "y");
         latinSource.put("46", "z");
+        latinSource.put("47", ",");
+        latinSource.put("48", " ");
+        latinSource.put("49", "./");
+        latinSource.put("40", "@");
 
         arabicSource.put("1", "ا");
         arabicSource.put("2", "ح");
