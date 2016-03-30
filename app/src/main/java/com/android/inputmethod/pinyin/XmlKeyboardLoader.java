@@ -16,17 +16,17 @@
 
 package com.android.inputmethod.pinyin;
 
-import com.android.inputmethod.pinyin.SoftKeyboard.KeyRow;
-
 import android.content.Context;
 import android.content.res.Resources;
 import android.content.res.XmlResourceParser;
 import android.graphics.drawable.Drawable;
 
-import java.io.IOException;
-import java.util.regex.Pattern;
+import com.android.inputmethod.pinyin.SoftKeyboard.KeyRow;
 
 import org.xmlpull.v1.XmlPullParserException;
+
+import java.io.IOException;
+import java.util.regex.Pattern;
 
 /**
  * Class used to load a soft keyboard or a soft keyboard template from xml
@@ -546,8 +546,9 @@ public class XmlKeyboardLoader {
                             if (null != codeArr) {
                                 keyCode = Integer.valueOf(codeArr[i]);
                             }
+
                             softKey.setKeyAttribute(keyCode, labelArr[i],
-                                    attrKeys.repeat, attrKeys.balloon);
+                                   attrKeys.repeat, attrKeys.balloon);
 
                             softKey.setKeyType(mSkbTemplate
                                     .getKeyType(attrKeys.keyType), null, null);

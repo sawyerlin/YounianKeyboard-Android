@@ -16,11 +16,11 @@
 
 package com.android.inputmethod.pinyin;
 
-import com.android.inputmethod.pinyin.InputModeSwitcher.ToggleStates;
-
 import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
 import android.view.KeyEvent;
+
+import com.android.inputmethod.pinyin.InputModeSwitcher.ToggleStates;
 
 import java.util.ArrayList;
 import java.util.List;

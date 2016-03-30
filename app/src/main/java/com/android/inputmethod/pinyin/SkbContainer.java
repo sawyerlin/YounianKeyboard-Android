@@ -228,6 +228,10 @@ public class SkbContainer extends RelativeLayout implements OnTouchListener {
         return true;
     }
 
+    public SoftKeyboard getSoftKeyboard() {
+        return mMajorView.getSoftKeyboard();
+    }
+
     public void toggleCandidateMode(boolean candidatesShowing) {
         if (null == mMajorView || !mInputModeSwitcher.isChineseText()
                 || mLastCandidatesShowing == candidatesShowing) return;

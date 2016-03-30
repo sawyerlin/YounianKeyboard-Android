@@ -85,6 +85,7 @@ public class PinyinIME extends InputMethodService {
     private SourceType sourceType = SourceType.Arabic;
     private static Cycle<SourceType> sourceTypeCycle;
     private static Hashtable<String, Integer> qwerty = new Hashtable<>();
+    private boolean CAP = false;
     static {
         ArrayList<SourceType> sourceTypeArrayList = new ArrayList<>();
         sourceTypeArrayList.add(SourceType.Arabic);
@@ -290,8 +291,9 @@ public class PinyinIME extends InputMethodService {
     public boolean onKeyUp(int keyCode, KeyEvent event) {
         InputConnection ic = getCurrentInputConnection();
         if (keyCode == 83) {
-           // change lang
             sourceType = sourceTypeCycle.peek();
+            SoftKey key = mSkbContainer.getSoftKeyboard().getKey(3, 0);
+            key.setKeyAttribute(key.getKeyCode(), sourceType.toString(), key.repeatable(), key.needBalloon());
             return true;
         }
 
@@ -324,7 +326,15 @@ public class PinyinIME extends InputMethodService {
             } else {
                 if (keyCode == 62) {
                     if (this.isComposing) {
+                        if (sourceType == SourceType.Latin && word == "55") {
+                            CAP = true;
+                            return true;
+                        }
                         String currentText = Source.findValue(sourceType, word);
+                        if (CAP) {
+                            currentText = currentText.toUpperCase();
+                            CAP = false;
+                        }
                         text += currentText;
                         word = "";
                         ic.finishComposingText();
@@ -337,7 +347,15 @@ public class PinyinIME extends InputMethodService {
                     word += code;
                     if (this.isComposing) {
                         if (word.length() == 2) {
+                            if (sourceType == SourceType.Latin && word == "55") {
+                                CAP = true;
+                                return true;
+                            }
                             String currentText = Source.findValue(sourceType, word);
+                            if (CAP) {
+                                currentText = currentText.toUpperCase();
+                                CAP = false;
+                            }
                             text += currentText;
                             word = "";
                             ic.commitText(currentText, 1);
