@@ -14,9 +14,9 @@
      limitations under the License.
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.android.inputmethod.pinyin">
+    package="com.android.inputmethod.younian">
 
-        <original-package android:name="com.android.inputmethod.pinyin" />
+        <original-package android:name="com.android.inputmethod.younian" />
 
         <uses-permission android:name="android.permission.VIBRATE"/>
         <uses-permission android:name="android.permission.INTERNET"/>
@@ -26,15 +26,15 @@
 
         <application android:icon="@drawable/app_icon"
           android:label="@string/ime_name">
-            <service android:name=".PinyinDecoderService"
+            <service android:name="com.android.inputmethod.younian.PinyinDecoderService"
                 android:exported="true">
                 <intent-filter>
-                    <action android:name="com.android.inputmethod.pinyin.Decoder_Service" />
+                    <action android:name="com.android.inputmethod.younian.Decoder_Service" />
                     <category android:name="android.intent.category.DEFAULT" />
                 </intent-filter>
             </service>
 
-            <service android:name=".PinyinIME"
+            <service android:name="com.android.inputmethod.younian.PinyinIME"
                 android:label="@string/ime_name"
                     android:permission="android.permission.BIND_INPUT_METHOD">
                 <intent-filter>
@@ -43,7 +43,7 @@
                 <meta-data android:name="android.view.im" android:resource="@xml/method" />
             </service>
 
-            <activity android:name=".SettingsActivity"
+            <activity android:name="com.android.inputmethod.younian.SettingsActivity"
                 android:label="@string/ime_settings_activity_name">
                 <intent-filter>
                     <action android:name="android.intent.action.MAIN"/>

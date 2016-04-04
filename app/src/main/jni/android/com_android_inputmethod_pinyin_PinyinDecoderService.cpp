@@ -405,7 +405,7 @@ static int registerNativeMethods(JNIEnv* env, const char* className,
 static int registerNatives(JNIEnv* env)
 {
     if (!registerNativeMethods(env,
-           "com/android/inputmethod/pinyin/PinyinDecoderService",
+           "com/android/inputmethod/younian/PinyinDecoderService",
             gMethods, sizeof(gMethods) / sizeof(gMethods[0])))
         return JNI_FALSE;
 

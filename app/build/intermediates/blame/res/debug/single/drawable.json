@@ -92,12 +92,12 @@
         "source": "/home/slin/AndroidStudioProjects/PinyinIME1/app/src/main/res/drawable/arrow_right.png"
     },
     {
-        "merged": "/home/slin/AndroidStudioProjects/PinyinIME1/app/build/intermediates/res/merged/debug/drawable/smiley_popup_icon.png",
-        "source": "/home/slin/AndroidStudioProjects/PinyinIME1/app/src/main/res/drawable/smiley_popup_icon.png"
-    },
-    {
         "merged": "/home/slin/AndroidStudioProjects/PinyinIME1/app/build/intermediates/res/merged/debug/drawable/space_popup_icon.png",
         "source": "/home/slin/AndroidStudioProjects/PinyinIME1/app/src/main/res/drawable/space_popup_icon.png"
+    },
+    {
+        "merged": "/home/slin/AndroidStudioProjects/PinyinIME1/app/build/intermediates/res/merged/debug/drawable/smiley_popup_icon.png",
+        "source": "/home/slin/AndroidStudioProjects/PinyinIME1/app/src/main/res/drawable/smiley_popup_icon.png"
     },
     {
         "merged": "/home/slin/AndroidStudioProjects/PinyinIME1/app/build/intermediates/res/merged/debug/drawable/emotion_icon_12_popup.png",

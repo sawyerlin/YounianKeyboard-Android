@@ -1,14 +1,13 @@
 apply plugin: 'com.android.application'
-
 android {
-    compileSdkVersion 21
+    compileSdkVersion 10
     buildToolsVersion "23.0.2"
 
     aaptOptions {
         noCompress "dat"
     }
     defaultConfig {
-        applicationId "com.android.inputmethod.pinyin"
+        applicationId "com.android.inputmethod.younian"
 
         ndk {
             moduleName "libjni_pinyinime"
@@ -30,4 +29,7 @@ android {
             jniDebuggable = true
         }
     }
+}
+
+dependencies {
 }
