@@ -315,6 +315,7 @@ public class PinyinIME extends InputMethodService {
                         } else {
                             this.isComposing = false;
                             ic.finishComposingText();
+                            ic.deleteSurroundingText(1, 0);
                             String currentText = Source.findValue(SourceType.Latin, word);
                             word = "";
                             Integer latinCode = qwerty.get(currentText);
