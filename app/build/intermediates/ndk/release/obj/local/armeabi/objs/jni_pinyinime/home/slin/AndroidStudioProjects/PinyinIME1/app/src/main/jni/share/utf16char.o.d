@@ -1,0 +1,5 @@
+/home/slin/AndroidStudioProjects/PinyinIME1/app/build/intermediates/ndk/release/obj/local/armeabi/objs/jni_pinyinime//home/slin/AndroidStudioProjects/PinyinIME1/app/src/main/jni/share/utf16char.o: \
+ /home/slin/AndroidStudioProjects/PinyinIME1/app/src/main/jni/share/utf16char.cpp \
+ /home/slin/AndroidStudioProjects/PinyinIME1/app/src/main/jni/share/../include/utf16char.h
+
+/home/slin/AndroidStudioProjects/PinyinIME1/app/src/main/jni/share/../include/utf16char.h:

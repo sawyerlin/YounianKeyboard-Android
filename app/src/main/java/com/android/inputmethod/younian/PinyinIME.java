@@ -315,7 +315,6 @@ public class PinyinIME extends InputMethodService {
                         } else {
                             this.isComposing = false;
                             ic.finishComposingText();
-                            ic.deleteSurroundingText(1, 0);
                             String currentText = Source.findValue(SourceType.Latin, word);
                             word = "";
                             Integer latinCode = qwerty.get(currentText);
@@ -324,6 +323,7 @@ public class PinyinIME extends InputMethodService {
                                 ic.deleteSurroundingText(1, 0);
                             } else {
                                 ic.commitText(currentText, 1);
+                                ic.deleteSurroundingText(1, 0);
                                 text += currentText;
                                 return true;
                             }
