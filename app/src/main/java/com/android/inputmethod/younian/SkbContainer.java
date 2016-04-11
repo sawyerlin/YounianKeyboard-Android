@@ -33,8 +33,6 @@ import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
 import android.widget.ViewFlipper;
 
-import com.android.inputmethod.younian.R;
-
 import java.lang.reflect.InvocationTargetException;
 
 /**
