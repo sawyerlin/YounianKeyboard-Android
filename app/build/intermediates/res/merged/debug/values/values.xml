@@ -13,6 +13,7 @@
     <dimen name="candview_background_padding">0dip</dimen>
     <string name="ime_name">友年输入法</string>
     <string name="ime_settings_activity_name">友年输入法设置</string>
+    <string name="ime_shuangpin_activity_name">友年输入法设置SHUANG</string>
     <string name="inputMethod"/>
     <string name="setting">友年输入法设置</string>
     <string name="setting_advanced_key">setting_advanced_key</string>

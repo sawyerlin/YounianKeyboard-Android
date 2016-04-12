@@ -41,7 +41,10 @@
         android:key="@string/setting_shuangpin_key"
         android:title="@string/setting_shuangpin_title"
         android:persistent="true" >
-        <intent android:action="com.android.inputmethod.younian.ShuangPinActivity" />
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.android.inputmethod.younian"
+            android:targetClass="com.android.inputmethod.younian.ShuangPinActivity" />
     </Preference>
     
     <!-- Remove following entry to unbundle Google functionality -->

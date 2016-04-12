@@ -50,5 +50,12 @@
                 </intent-filter>
             </activity>
 
+            <activity android:name="com.android.inputmethod.younian.ShuangPinActivity"
+                android:label="@string/ime_shuangpin_activity_name">
+                <intent-filter>
+                    <action android:name="android.intent.action.MAIN"/>
+                </intent-filter>
+            </activity>
+
         </application>
 </manifest>
