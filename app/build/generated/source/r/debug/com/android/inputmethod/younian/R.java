@@ -130,9 +130,9 @@ public final class R {
         public static final int space_popup_icon=0x7f020060;
     }
     public static final class id {
-        public static final int alpha_floatable=0x7f0a0008;
-        public static final int alpha_view1=0x7f0a0009;
-        public static final int alpha_view2=0x7f0a000a;
+        public static final int alpha_floatable=0x7f0a0009;
+        public static final int alpha_view1=0x7f0a000a;
+        public static final int alpha_view2=0x7f0a000b;
         public static final int arrow_left_btn=0x7f0a0001;
         public static final int arrow_right_btn=0x7f0a0002;
         public static final int candidate_flipper=0x7f0a0003;
@@ -141,11 +141,13 @@ public final class R {
         public static final int candidates_container=0x7f0a0000;
         public static final int composing_view=0x7f0a0007;
         public static final int floating_container=0x7f0a0006;
+        public static final int textView=0x7f0a0008;
     }
     public static final class layout {
         public static final int candidates_container=0x7f030000;
         public static final int floating_container=0x7f030001;
-        public static final int skb_container=0x7f030002;
+        public static final int shuangpin_settings=0x7f030002;
+        public static final int skb_container=0x7f030003;
     }
     public static final class raw {
         public static final int dict_pinyin=0x7f050000;
@@ -162,40 +164,43 @@ public final class R {
         public static final int setting_others_summary=0x7f090008;
         public static final int setting_prediction_key=0x7f090009;
         public static final int setting_prediction_title=0x7f09000a;
-        public static final int setting_sound_key=0x7f09000b;
-        public static final int setting_sound_key_title=0x7f09000c;
-        public static final int setting_switch_key=0x7f09000d;
-        public static final int setting_switch_shift_space_title=0x7f09000e;
-        public static final int setting_switch_title=0x7f09000f;
-        public static final int setting_vibrate_key=0x7f090010;
-        public static final int setting_vibrate_title=0x7f090011;
-        public static final int toggle_cn=0x7f090012;
-        public static final int toggle_cn_cand=0x7f090013;
-        public static final int toggle_en_lower=0x7f090014;
-        public static final int toggle_en_sym1=0x7f090015;
-        public static final int toggle_en_sym2=0x7f090016;
-        public static final int toggle_en_upper=0x7f090017;
-        public static final int toggle_enter_done=0x7f090018;
-        public static final int toggle_enter_go=0x7f090019;
-        public static final int toggle_enter_next=0x7f09001a;
-        public static final int toggle_enter_search=0x7f09001b;
-        public static final int toggle_enter_send=0x7f09001c;
-        public static final int toggle_phone_sym=0x7f09001d;
-        public static final int toggle_row_cn=0x7f09001e;
-        public static final int toggle_row_emailaddress=0x7f09001f;
-        public static final int toggle_row_en=0x7f090020;
-        public static final int toggle_row_uri=0x7f090021;
-        public static final int toggle_smiley=0x7f090022;
-        public static final int version=0x7f090023;
+        public static final int setting_shuangpin_key=0x7f09000b;
+        public static final int setting_shuangpin_title=0x7f09000c;
+        public static final int setting_sound_key=0x7f09000d;
+        public static final int setting_sound_key_title=0x7f09000e;
+        public static final int setting_switch_key=0x7f09000f;
+        public static final int setting_switch_shift_space_title=0x7f090010;
+        public static final int setting_switch_title=0x7f090011;
+        public static final int setting_vibrate_key=0x7f090012;
+        public static final int setting_vibrate_title=0x7f090013;
+        public static final int toggle_cn=0x7f090014;
+        public static final int toggle_cn_cand=0x7f090015;
+        public static final int toggle_en_lower=0x7f090016;
+        public static final int toggle_en_sym1=0x7f090017;
+        public static final int toggle_en_sym2=0x7f090018;
+        public static final int toggle_en_upper=0x7f090019;
+        public static final int toggle_enter_done=0x7f09001a;
+        public static final int toggle_enter_go=0x7f09001b;
+        public static final int toggle_enter_next=0x7f09001c;
+        public static final int toggle_enter_search=0x7f09001d;
+        public static final int toggle_enter_send=0x7f09001e;
+        public static final int toggle_phone_sym=0x7f09001f;
+        public static final int toggle_row_cn=0x7f090020;
+        public static final int toggle_row_emailaddress=0x7f090021;
+        public static final int toggle_row_en=0x7f090022;
+        public static final int toggle_row_uri=0x7f090023;
+        public static final int toggle_smiley=0x7f090024;
+        public static final int version=0x7f090025;
     }
     public static final class xml {
         public static final int method=0x7f040000;
         public static final int settings=0x7f040001;
-        public static final int skb_phone=0x7f040002;
-        public static final int skb_qwerty=0x7f040003;
-        public static final int skb_smiley=0x7f040004;
-        public static final int skb_sym1=0x7f040005;
-        public static final int skb_sym2=0x7f040006;
-        public static final int skb_template1=0x7f040007;
+        public static final int shuangpin=0x7f040002;
+        public static final int skb_phone=0x7f040003;
+        public static final int skb_qwerty=0x7f040004;
+        public static final int skb_smiley=0x7f040005;
+        public static final int skb_sym1=0x7f040006;
+        public static final int skb_sym2=0x7f040007;
+        public static final int skb_template1=0x7f040008;
     }
 }

@@ -1,87 +1,87 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/sawyer/StudioProjects/YounianKeyboard-Android/app/src/main/AndroidManifest.xml:16:1-54:12
+ADDED from /home/slin/AndroidStudioProjects/PinyinIME1/app/src/main/AndroidManifest.xml:16:1-54:12
 	package
-		ADDED from /home/sawyer/StudioProjects/YounianKeyboard-Android/app/src/main/AndroidManifest.xml:17:5-46
-		INJECTED from /home/sawyer/StudioProjects/YounianKeyboard-Android/app/src/main/AndroidManifest.xml
-		INJECTED from /home/sawyer/StudioProjects/YounianKeyboard-Android/app/src/main/AndroidManifest.xml
+		ADDED from /home/slin/AndroidStudioProjects/PinyinIME1/app/src/main/AndroidManifest.xml:17:5-46
+		INJECTED from /home/slin/AndroidStudioProjects/PinyinIME1/app/src/main/AndroidManifest.xml
+		INJECTED from /home/slin/AndroidStudioProjects/PinyinIME1/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /home/sawyer/StudioProjects/YounianKeyboard-Android/app/src/main/AndroidManifest.xml:16:11-69
+		ADDED from /home/slin/AndroidStudioProjects/PinyinIME1/app/src/main/AndroidManifest.xml:16:11-69
 original-package
-ADDED from /home/sawyer/StudioProjects/YounianKeyboard-Android/app/src/main/AndroidManifest.xml:19:9-76
+ADDED from /home/slin/AndroidStudioProjects/PinyinIME1/app/src/main/AndroidManifest.xml:19:9-76
 	android:name
-		ADDED from /home/sawyer/StudioProjects/YounianKeyboard-Android/app/src/main/AndroidManifest.xml:19:27-73
+		ADDED from /home/slin/AndroidStudioProjects/PinyinIME1/app/src/main/AndroidManifest.xml:19:27-73
 uses-permission#android.permission.VIBRATE
-ADDED from /home/sawyer/StudioProjects/YounianKeyboard-Android/app/src/main/AndroidManifest.xml:21:9-69
+ADDED from /home/slin/AndroidStudioProjects/PinyinIME1/app/src/main/AndroidManifest.xml:21:9-69
 	android:name
-		ADDED from /home/sawyer/StudioProjects/YounianKeyboard-Android/app/src/main/AndroidManifest.xml:21:26-67
+		ADDED from /home/slin/AndroidStudioProjects/PinyinIME1/app/src/main/AndroidManifest.xml:21:26-67
 uses-permission#android.permission.INTERNET
-ADDED from /home/sawyer/StudioProjects/YounianKeyboard-Android/app/src/main/AndroidManifest.xml:22:9-70
+ADDED from /home/slin/AndroidStudioProjects/PinyinIME1/app/src/main/AndroidManifest.xml:22:9-70
 	android:name
-		ADDED from /home/sawyer/StudioProjects/YounianKeyboard-Android/app/src/main/AndroidManifest.xml:22:26-68
+		ADDED from /home/slin/AndroidStudioProjects/PinyinIME1/app/src/main/AndroidManifest.xml:22:26-68
 uses-permission#android.permission.READ_USER_DICTIONARY
-ADDED from /home/sawyer/StudioProjects/YounianKeyboard-Android/app/src/main/AndroidManifest.xml:23:9-82
+ADDED from /home/slin/AndroidStudioProjects/PinyinIME1/app/src/main/AndroidManifest.xml:23:9-82
 	android:name
-		ADDED from /home/sawyer/StudioProjects/YounianKeyboard-Android/app/src/main/AndroidManifest.xml:23:26-80
+		ADDED from /home/slin/AndroidStudioProjects/PinyinIME1/app/src/main/AndroidManifest.xml:23:26-80
 uses-permission#android.permission.WRITE_USER_DICTIONARY
-ADDED from /home/sawyer/StudioProjects/YounianKeyboard-Android/app/src/main/AndroidManifest.xml:24:9-83
+ADDED from /home/slin/AndroidStudioProjects/PinyinIME1/app/src/main/AndroidManifest.xml:24:9-83
 	android:name
-		ADDED from /home/sawyer/StudioProjects/YounianKeyboard-Android/app/src/main/AndroidManifest.xml:24:26-81
+		ADDED from /home/slin/AndroidStudioProjects/PinyinIME1/app/src/main/AndroidManifest.xml:24:26-81
 uses-permission#android.permission.READ_CONTACTS
-ADDED from /home/sawyer/StudioProjects/YounianKeyboard-Android/app/src/main/AndroidManifest.xml:25:9-75
+ADDED from /home/slin/AndroidStudioProjects/PinyinIME1/app/src/main/AndroidManifest.xml:25:9-75
 	android:name
-		ADDED from /home/sawyer/StudioProjects/YounianKeyboard-Android/app/src/main/AndroidManifest.xml:25:26-73
+		ADDED from /home/slin/AndroidStudioProjects/PinyinIME1/app/src/main/AndroidManifest.xml:25:26-73
 application
-ADDED from /home/sawyer/StudioProjects/YounianKeyboard-Android/app/src/main/AndroidManifest.xml:27:9-53:23
+ADDED from /home/slin/AndroidStudioProjects/PinyinIME1/app/src/main/AndroidManifest.xml:27:9-53:23
 	android:label
-		ADDED from /home/sawyer/StudioProjects/YounianKeyboard-Android/app/src/main/AndroidManifest.xml:28:11-43
+		ADDED from /home/slin/AndroidStudioProjects/PinyinIME1/app/src/main/AndroidManifest.xml:28:11-43
 	android:icon
-		ADDED from /home/sawyer/StudioProjects/YounianKeyboard-Android/app/src/main/AndroidManifest.xml:27:22-55
+		ADDED from /home/slin/AndroidStudioProjects/PinyinIME1/app/src/main/AndroidManifest.xml:27:22-55
 service#com.android.inputmethod.younian.PinyinDecoderService
-ADDED from /home/sawyer/StudioProjects/YounianKeyboard-Android/app/src/main/AndroidManifest.xml:29:13-35:23
+ADDED from /home/slin/AndroidStudioProjects/PinyinIME1/app/src/main/AndroidManifest.xml:29:13-35:23
 	android:exported
-		ADDED from /home/sawyer/StudioProjects/YounianKeyboard-Android/app/src/main/AndroidManifest.xml:30:17-40
+		ADDED from /home/slin/AndroidStudioProjects/PinyinIME1/app/src/main/AndroidManifest.xml:30:17-40
 	android:name
-		ADDED from /home/sawyer/StudioProjects/YounianKeyboard-Android/app/src/main/AndroidManifest.xml:29:22-89
+		ADDED from /home/slin/AndroidStudioProjects/PinyinIME1/app/src/main/AndroidManifest.xml:29:22-89
 intent-filter#android.intent.category.DEFAULT+com.android.inputmethod.younian.Decoder_Service
-ADDED from /home/sawyer/StudioProjects/YounianKeyboard-Android/app/src/main/AndroidManifest.xml:31:17-34:33
+ADDED from /home/slin/AndroidStudioProjects/PinyinIME1/app/src/main/AndroidManifest.xml:31:17-34:33
 action#com.android.inputmethod.younian.Decoder_Service
-ADDED from /home/sawyer/StudioProjects/YounianKeyboard-Android/app/src/main/AndroidManifest.xml:32:21-94
+ADDED from /home/slin/AndroidStudioProjects/PinyinIME1/app/src/main/AndroidManifest.xml:32:21-94
 	android:name
-		ADDED from /home/sawyer/StudioProjects/YounianKeyboard-Android/app/src/main/AndroidManifest.xml:32:29-91
+		ADDED from /home/slin/AndroidStudioProjects/PinyinIME1/app/src/main/AndroidManifest.xml:32:29-91
 category#android.intent.category.DEFAULT
-ADDED from /home/sawyer/StudioProjects/YounianKeyboard-Android/app/src/main/AndroidManifest.xml:33:21-80
+ADDED from /home/slin/AndroidStudioProjects/PinyinIME1/app/src/main/AndroidManifest.xml:33:21-80
 	android:name
-		ADDED from /home/sawyer/StudioProjects/YounianKeyboard-Android/app/src/main/AndroidManifest.xml:33:31-77
+		ADDED from /home/slin/AndroidStudioProjects/PinyinIME1/app/src/main/AndroidManifest.xml:33:31-77
 service#com.android.inputmethod.younian.PinyinIME
-ADDED from /home/sawyer/StudioProjects/YounianKeyboard-Android/app/src/main/AndroidManifest.xml:37:13-44:23
+ADDED from /home/slin/AndroidStudioProjects/PinyinIME1/app/src/main/AndroidManifest.xml:37:13-44:23
 	android:label
-		ADDED from /home/sawyer/StudioProjects/YounianKeyboard-Android/app/src/main/AndroidManifest.xml:38:17-49
+		ADDED from /home/slin/AndroidStudioProjects/PinyinIME1/app/src/main/AndroidManifest.xml:38:17-49
 	android:permission
-		ADDED from /home/sawyer/StudioProjects/YounianKeyboard-Android/app/src/main/AndroidManifest.xml:39:21-78
+		ADDED from /home/slin/AndroidStudioProjects/PinyinIME1/app/src/main/AndroidManifest.xml:39:21-78
 	android:name
-		ADDED from /home/sawyer/StudioProjects/YounianKeyboard-Android/app/src/main/AndroidManifest.xml:37:22-78
+		ADDED from /home/slin/AndroidStudioProjects/PinyinIME1/app/src/main/AndroidManifest.xml:37:22-78
 intent-filter#android.view.InputMethod
-ADDED from /home/sawyer/StudioProjects/YounianKeyboard-Android/app/src/main/AndroidManifest.xml:40:17-42:33
+ADDED from /home/slin/AndroidStudioProjects/PinyinIME1/app/src/main/AndroidManifest.xml:40:17-42:33
 action#android.view.InputMethod
-ADDED from /home/sawyer/StudioProjects/YounianKeyboard-Android/app/src/main/AndroidManifest.xml:41:21-71
+ADDED from /home/slin/AndroidStudioProjects/PinyinIME1/app/src/main/AndroidManifest.xml:41:21-71
 	android:name
-		ADDED from /home/sawyer/StudioProjects/YounianKeyboard-Android/app/src/main/AndroidManifest.xml:41:29-68
+		ADDED from /home/slin/AndroidStudioProjects/PinyinIME1/app/src/main/AndroidManifest.xml:41:29-68
 meta-data#android.view.im
-ADDED from /home/sawyer/StudioProjects/YounianKeyboard-Android/app/src/main/AndroidManifest.xml:43:17-92
+ADDED from /home/slin/AndroidStudioProjects/PinyinIME1/app/src/main/AndroidManifest.xml:43:17-92
 	android:resource
-		ADDED from /home/sawyer/StudioProjects/YounianKeyboard-Android/app/src/main/AndroidManifest.xml:43:59-89
+		ADDED from /home/slin/AndroidStudioProjects/PinyinIME1/app/src/main/AndroidManifest.xml:43:59-89
 	android:name
-		ADDED from /home/sawyer/StudioProjects/YounianKeyboard-Android/app/src/main/AndroidManifest.xml:43:28-58
+		ADDED from /home/slin/AndroidStudioProjects/PinyinIME1/app/src/main/AndroidManifest.xml:43:28-58
 activity#com.android.inputmethod.younian.SettingsActivity
-ADDED from /home/sawyer/StudioProjects/YounianKeyboard-Android/app/src/main/AndroidManifest.xml:46:13-51:24
+ADDED from /home/slin/AndroidStudioProjects/PinyinIME1/app/src/main/AndroidManifest.xml:46:13-51:24
 	android:label
-		ADDED from /home/sawyer/StudioProjects/YounianKeyboard-Android/app/src/main/AndroidManifest.xml:47:17-67
+		ADDED from /home/slin/AndroidStudioProjects/PinyinIME1/app/src/main/AndroidManifest.xml:47:17-67
 	android:name
-		ADDED from /home/sawyer/StudioProjects/YounianKeyboard-Android/app/src/main/AndroidManifest.xml:46:23-86
+		ADDED from /home/slin/AndroidStudioProjects/PinyinIME1/app/src/main/AndroidManifest.xml:46:23-86
 intent-filter#android.intent.action.MAIN
-ADDED from /home/sawyer/StudioProjects/YounianKeyboard-Android/app/src/main/AndroidManifest.xml:48:17-50:33
+ADDED from /home/slin/AndroidStudioProjects/PinyinIME1/app/src/main/AndroidManifest.xml:48:17-50:33
 action#android.intent.action.MAIN
-ADDED from /home/sawyer/StudioProjects/YounianKeyboard-Android/app/src/main/AndroidManifest.xml:49:21-72
+ADDED from /home/slin/AndroidStudioProjects/PinyinIME1/app/src/main/AndroidManifest.xml:49:21-72
 	android:name
-		ADDED from /home/sawyer/StudioProjects/YounianKeyboard-Android/app/src/main/AndroidManifest.xml:49:29-70
+		ADDED from /home/slin/AndroidStudioProjects/PinyinIME1/app/src/main/AndroidManifest.xml:49:29-70

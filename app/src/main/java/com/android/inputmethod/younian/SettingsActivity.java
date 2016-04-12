@@ -16,8 +16,9 @@
 
 package com.android.inputmethod.younian;
 
-import java.util.List;
-
+import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.content.pm.ResolveInfo;
 import android.os.Bundle;
 import android.preference.CheckBoxPreference;
 import android.preference.Preference;
@@ -26,9 +27,7 @@ import android.preference.PreferenceGroup;
 import android.preference.PreferenceManager;
 import android.preference.PreferenceScreen;
 
-import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.content.pm.ResolveInfo;
+import java.util.List;
 
 /**
  * Setting activity of Pinyin IME.
@@ -41,6 +40,7 @@ public class SettingsActivity extends PreferenceActivity implements
     private CheckBoxPreference mKeySoundPref;
     private CheckBoxPreference mVibratePref;
     private CheckBoxPreference mPredictionPref;
+    private Preference mShuangpinPref;
     
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,7 +55,9 @@ public class SettingsActivity extends PreferenceActivity implements
                 .findPreference(getString(R.string.setting_vibrate_key));
         mPredictionPref = (CheckBoxPreference) prefSet
                 .findPreference(getString(R.string.setting_prediction_key));
-        
+        mShuangpinPref =  prefSet
+                .findPreference(getString(R.string.setting_shuangpin_key));
+
         prefSet.setOnPreferenceChangeListener(this);
         
         Settings.getInstance(PreferenceManager
@@ -96,6 +98,16 @@ public class SettingsActivity extends PreferenceActivity implements
         mKeySoundPref.setChecked(Settings.getKeySound());
         mVibratePref.setChecked(Settings.getVibrate());
         mPredictionPref.setChecked(Settings.getPrediction());
+        final PreferenceActivity activa = this;
+        mShuangpinPref.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
+            @Override
+            public boolean onPreferenceClick(Preference preference) {
+                Intent intent = new Intent(CurrentActivity.class, ShuangPinActivity.class);
+                StartActivity
+                System.out.println("on preference click");
+                return false;
+            }
+        });
     }
 
     public void updatePreference(PreferenceGroup parentPref, String prefKey) {

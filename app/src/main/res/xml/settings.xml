@@ -36,6 +36,12 @@
       android:persistent="true"
       android:summaryOn="@string/setting_enabled"
       android:summaryOff="@string/setting_disabled"/>
+
+    <Preference
+        android:key="@string/setting_shuangpin_key"
+        android:title="@string/setting_shuangpin_title"
+        android:persistent="true" >
+    </Preference>
     
     <!-- Remove following entry to unbundle Google functionality -->
     <PreferenceScreen
@@ -51,5 +57,5 @@
       android:title="@string/setting_switch_title"
       android:persistent="false"
       android:summary="@string/setting_switch_shift_space_title"/>
-     
+
 </PreferenceScreen>

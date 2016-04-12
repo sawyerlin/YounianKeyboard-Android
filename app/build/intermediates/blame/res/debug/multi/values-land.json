@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/home/sawyer/StudioProjects/YounianKeyboard-Android/app/build/intermediates/res/merged/debug/values-land/values-land.xml",
+        "outputFile": "/home/slin/AndroidStudioProjects/PinyinIME1/app/build/intermediates/res/merged/debug/values-land/values-land.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 110
                 },
                 "from": {
-                    "file": "/home/sawyer/StudioProjects/YounianKeyboard-Android/app/src/main/res/values-land/dimens.xml",
+                    "file": "/home/slin/AndroidStudioProjects/PinyinIME1/app/src/main/res/values-land/dimens.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
@@ -30,7 +30,7 @@
                     "endOffset": 159
                 },
                 "from": {
-                    "file": "/home/sawyer/StudioProjects/YounianKeyboard-Android/app/src/main/res/values-land/dimens.xml",
+                    "file": "/home/slin/AndroidStudioProjects/PinyinIME1/app/src/main/res/values-land/dimens.xml",
                     "position": {
                         "startLine": 17,
                         "startColumn": 4,

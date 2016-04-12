@@ -22,6 +22,8 @@
     <string name="setting_others_summary">词典同步等</string>
     <string name="setting_prediction_key">setting_prediction_key</string>
     <string name="setting_prediction_title">联想输入</string>
+    <string name="setting_shuangpin_key">setting_shuangpin_key</string>
+    <string name="setting_shuangpin_title">双拼</string>
     <string name="setting_sound_key">setting_sound_key</string>
     <string name="setting_sound_key_title">按键声音</string>
     <string name="setting_switch_key">setting_switch_key</string>
