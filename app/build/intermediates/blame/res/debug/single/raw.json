@@ -2,9 +2,5 @@
     {
         "merged": "/home/slin/AndroidStudioProjects/PinyinIME1/app/build/intermediates/res/merged/debug/raw/dict_pinyin.dat",
         "source": "/home/slin/AndroidStudioProjects/PinyinIME1/app/src/main/res/raw/dict_pinyin.dat"
-    },
-    {
-        "merged": "/home/sawyer/StudioProjects/YounianKeyboard-Android/app/build/intermediates/res/merged/debug/raw/dict_pinyin.dat",
-        "source": "/home/sawyer/StudioProjects/YounianKeyboard-Android/app/src/main/res/raw/dict_pinyin.dat"
     }
 ]
