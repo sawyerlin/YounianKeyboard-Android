@@ -44,6 +44,61 @@ public class ShuangPinDbHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
         sqLiteDatabase.execSQL(SQL_CREATE_SHUANGPINS);
+        // Default values
+        insertItem(new Item("11", "q"));
+        insertItem(new Item("12", "w"));
+        insertItem(new Item("13", "e"));
+        insertItem(new Item("14", "r"));
+        insertItem(new Item("15", "t"));
+        insertItem(new Item("16", "y"));
+        insertItem(new Item("17", "sh"));
+        insertItem(new Item("18", "ch"));
+        insertItem(new Item("19", "p"));
+        insertItem(new Item("20", "a"));
+        insertItem(new Item("21", "s"));
+        insertItem(new Item("22", "d"));
+        insertItem(new Item("23", "f"));
+        insertItem(new Item("24", "g"));
+        insertItem(new Item("25", "h"));
+        insertItem(new Item("26", "j"));
+        insertItem(new Item("27", "k"));
+        insertItem(new Item("28", "l"));
+        insertItem(new Item("29", "ing"));
+        insertItem(new Item("30", "z"));
+        insertItem(new Item("31", "x"));
+        insertItem(new Item("32", "ch"));
+        insertItem(new Item("33", "zh"));
+        insertItem(new Item("34", "b"));
+        insertItem(new Item("35", "n"));
+        insertItem(new Item("36", "m"));
+        insertItem(new Item("37", "iu"));
+        insertItem(new Item("38", "ia"));
+        insertItem(new Item("39", "uan"));
+        insertItem(new Item("40", "ue"));
+        insertItem(new Item("41", "uai"));
+        insertItem(new Item("42", "ia"));
+        insertItem(new Item("43", "o"));
+        insertItem(new Item("44", "un"));
+        insertItem(new Item("45", "ong"));
+        insertItem(new Item("46", "uang"));
+        insertItem(new Item("47", "en"));
+        insertItem(new Item("48", "eng"));
+        insertItem(new Item("49", "ang"));
+        insertItem(new Item("50", "an"));
+        insertItem(new Item("51", "ao"));
+        insertItem(new Item("52", "ai"));
+        insertItem(new Item("53", "ei"));
+        insertItem(new Item("54", "ie"));
+        insertItem(new Item("55", "iao"));
+        insertItem(new Item("56", "ui"));
+        insertItem(new Item("57", "ou"));
+        insertItem(new Item("58", "ing"));
+        insertItem(new Item("59", "ian"));
+        insertItem(new Item("60", "ua"));
+        insertItem(new Item("61", "er"));
+        insertItem(new Item("62", "uo"));
+        insertItem(new Item("63", "iong"));
+        insertItem(new Item("64", "iang"));
     }
 
     @Override
@@ -52,9 +107,10 @@ public class ShuangPinDbHelper extends SQLiteOpenHelper {
         onCreate(sqLiteDatabase);
     }
 
-    public void insertItem(Item item) {
+    public boolean insertItem(Item item) {
         SQLiteDatabase db = getWritableDatabase();
 
+        boolean isSuccess = true;
         db.beginTransaction();
         try{
             ContentValues values = new ContentValues();
@@ -64,12 +120,27 @@ public class ShuangPinDbHelper extends SQLiteOpenHelper {
             db.setTransactionSuccessful();
         } catch (Exception e) {
             System.out.print(e.getMessage());
+            isSuccess = false;
         } finally {
             db.endTransaction();
         }
+        return isSuccess;
     }
 
-    public void updateItem() {
+    public void updateItem(Item item) {
+        SQLiteDatabase db = getWritableDatabase();
+        db.beginTransaction();
+        try {
+            String[] args = {item.getKey()};
+            ContentValues values = new ContentValues();
+            values.put(ShuangPinEntry.COLUMN_NAME_VALUE, item.value);
+            db.update(ShuangPinEntry.TABLE_NAME, values, ShuangPinEntry.COLUMN_NAME_KEY + " = ?", args);
+            db.setTransactionSuccessful();
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        } finally {
+            db.endTransaction();
+        }
     }
 
     public void deleteItem(Item item) {
@@ -80,10 +151,10 @@ public class ShuangPinDbHelper extends SQLiteOpenHelper {
             db.delete(ShuangPinEntry.TABLE_NAME, ShuangPinEntry.COLUMN_NAME_KEY + " = ?", args);
             db.setTransactionSuccessful();
         } catch (Exception e) {
+            System.out.println(e.getMessage());
         } finally {
             db.endTransaction();
         }
-
     }
 
     public ArrayList<Item> findItems() {
@@ -113,8 +184,22 @@ public class ShuangPinDbHelper extends SQLiteOpenHelper {
         return items;
     }
 
-    public Item findItem() {
-        return null;
+    public Item findItem(String key) {
+        SQLiteDatabase db = getReadableDatabase();
+        Item item = null;
+        db.beginTransaction();
+        try {
+            String[] args = {key};
+            Cursor cursor = db.rawQuery("SELECT * FROM " + ShuangPinEntry.TABLE_NAME + " WHERE " + ShuangPinEntry.COLUMN_NAME_KEY + " = ? ", args);
+            if (cursor.moveToFirst()) {
+                item = new Item(key, cursor.getString(cursor.getColumnIndex(ShuangPinEntry.COLUMN_NAME_VALUE)));
+            }
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        } finally {
+            db.endTransaction();
+        }
+        return item;
     }
 }
 

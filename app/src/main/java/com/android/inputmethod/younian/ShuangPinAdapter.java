@@ -35,33 +35,34 @@ public class ShuangPinAdapter extends ArrayAdapter<Item> {
         if (gridView == null) {
             LayoutInflater inflater = ((Activity)context).getLayoutInflater();
             gridView = inflater.inflate(layoutResourceId, parent, false);
-            final TextView textViewKey = (TextView)gridView.findViewById(R.id.textViewKey);
-            final EditText editTextValue = (EditText)gridView.findViewById(R.id.editTextValue);
-            Button buttonOk = (Button)gridView.findViewById(R.id.buttonOk);
-            Button buttonDel = (Button)gridView.findViewById(R.id.buttonDel);
-            System.out.println(data.size());
-            System.out.println(data.get(data.size() - 1));
-            System.out.println(position);
-            Item item = data.get(position);
-            textViewKey.setText(item.getKey());
-            editTextValue.setText(item.getValue());
-            final int currentPosition = position;
-            final ShuangPinAdapter adapter = this;
-            buttonOk.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-
-                }
-            });
-            buttonDel.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    adapter.data.remove(currentPosition);
-                    adapter.notifyDataSetChanged();
-                    helper.deleteItem(data.get(currentPosition));
-                }
-            });
         }
+        TextView textViewKey = (TextView)gridView.findViewById(R.id.textViewKey);
+        EditText editTextValue = (EditText)gridView.findViewById(R.id.editTextValue);
+        Button buttonOk = (Button)gridView.findViewById(R.id.buttonOk);
+        Button buttonDel = (Button)gridView.findViewById(R.id.buttonDel);
+        buttonDel.setTag(new Integer(position));
+        buttonOk.setTag(new Integer(position));
+        Item item = data.get(position);
+        textViewKey.setText(item.getKey());
+        editTextValue.setText(item.getValue());
+        buttonOk.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Integer tag = (Integer)view.getTag();
+                Item item = data.get(tag.intValue());
+                TextView editTextValue = (TextView)((View)view.getParent()).findViewById(R.id.editTextValue);
+                item.setValue(editTextValue.getText().toString());
+                helper.updateItem(item);
+            }
+        });
+        buttonDel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Integer tag = (Integer)view.getTag();
+                helper.deleteItem(data.get(tag.intValue()));
+                remove(getItem(tag.intValue()));
+            }
+        });
         return gridView;
     }
 }

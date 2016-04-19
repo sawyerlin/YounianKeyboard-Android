@@ -135,7 +135,7 @@ public final class R {
         public static final int alpha_view2=0x7f0a0011;
         public static final int arrow_left_btn=0x7f0a0001;
         public static final int arrow_right_btn=0x7f0a0002;
-        public static final int buttonAdd=0x7f0a000e;
+        public static final int buttonAdd=0x7f0a000d;
         public static final int buttonDel=0x7f0a000b;
         public static final int buttonOk=0x7f0a000a;
         public static final int candidate_flipper=0x7f0a0003;
@@ -143,10 +143,10 @@ public final class R {
         public static final int candidate_view2=0x7f0a0005;
         public static final int candidates_container=0x7f0a0000;
         public static final int composing_view=0x7f0a0007;
-        public static final int editTextKey=0x7f0a000d;
+        public static final int editTextKey=0x7f0a000c;
         public static final int editTextValue=0x7f0a0009;
         public static final int floating_container=0x7f0a0006;
-        public static final int gridView=0x7f0a000c;
+        public static final int gridView=0x7f0a000e;
         public static final int textViewKey=0x7f0a0008;
     }
     public static final class layout {
@@ -203,12 +203,11 @@ public final class R {
     public static final class xml {
         public static final int method=0x7f040000;
         public static final int settings=0x7f040001;
-        public static final int shuangpin=0x7f040002;
-        public static final int skb_phone=0x7f040003;
-        public static final int skb_qwerty=0x7f040004;
-        public static final int skb_smiley=0x7f040005;
-        public static final int skb_sym1=0x7f040006;
-        public static final int skb_sym2=0x7f040007;
-        public static final int skb_template1=0x7f040008;
+        public static final int skb_phone=0x7f040002;
+        public static final int skb_qwerty=0x7f040003;
+        public static final int skb_smiley=0x7f040004;
+        public static final int skb_sym1=0x7f040005;
+        public static final int skb_sym2=0x7f040006;
+        public static final int skb_template1=0x7f040007;
     }
 }

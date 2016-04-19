@@ -7,6 +7,8 @@ public class Item {
     String key;
     String value;
 
+    public Item() {}
+
     public Item(String key, String value) {
         this.key = key;
         this.value = value;
@@ -26,5 +28,10 @@ public class Item {
 
     public String getValue() {
         return value;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        return this.key == ((Item)o).key;
     }
 }

@@ -50,6 +50,8 @@ import android.widget.LinearLayout;
 import android.widget.PopupWindow;
 
 import com.android.inputmethod.younian.source.Cycle;
+import com.android.inputmethod.younian.source.Item;
+import com.android.inputmethod.younian.source.ShuangPinDbHelper;
 import com.android.inputmethod.younian.source.Source;
 import com.android.inputmethod.younian.source.SourceType;
 
@@ -90,7 +92,8 @@ public class PinyinIME extends InputMethodService {
         ArrayList<SourceType> sourceTypeArrayList = new ArrayList<SourceType>();
         sourceTypeArrayList.add(SourceType.Arabic);
         sourceTypeArrayList.add(SourceType.Latin);
-        sourceTypeArrayList.add(SourceType.Chinese);
+        sourceTypeArrayList.add(SourceType.Quanpin);
+        sourceTypeArrayList.add(SourceType.Shuangpin);
         sourceTypeCycle = new Cycle<SourceType>(sourceTypeArrayList, SourceType.Arabic);
         qwerty.put("q", 45);
         qwerty.put("w", 51);
@@ -119,6 +122,7 @@ public class PinyinIME extends InputMethodService {
         qwerty.put("n", 42);
         qwerty.put("m", 41);
     }
+    private ShuangPinDbHelper helper;
     /**
      * Used to switch input mode.
      */
@@ -223,6 +227,7 @@ public class PinyinIME extends InputMethodService {
 
     @Override
     public void onCreate() {
+        helper = ShuangPinDbHelper.getInstance(getApplicationContext());
         mEnvironment = Environment.getInstance();
         if (mEnvironment.needDebug()) {
             Log.d(TAG, "onCreate.");
@@ -298,12 +303,8 @@ public class PinyinIME extends InputMethodService {
             return true;
         }
 
-        if (keyCode == 66) { // Enter Change Line
-
-        }
-
         if (keyCode != 67) {
-            if (sourceType == SourceType.Chinese) {
+            if (sourceType == SourceType.Quanpin || sourceType == SourceType.Shuangpin) {
                 char code = event.getDisplayLabel();
                 word += code;
                 if (this.isComposing) {
@@ -315,17 +316,34 @@ public class PinyinIME extends InputMethodService {
                         } else {
                             this.isComposing = false;
                             ic.finishComposingText();
-                            String currentText = Source.findValue(SourceType.Latin, word);
-                            word = "";
-                            Integer latinCode = qwerty.get(currentText);
-                            if (latinCode != null) {
-                                keyCode = latinCode;
-                                ic.deleteSurroundingText(1, 0);
-                            } else {
-                                ic.commitText(currentText, 1);
-                                ic.deleteSurroundingText(1, 0);
-                                text += currentText;
-                                return true;
+                            if (sourceType == SourceType.Quanpin) {
+                                String currentText = Source.findValue(SourceType.Latin, word);
+                                word = "";
+                                Integer latinCode = qwerty.get(currentText);
+                                if (latinCode != null) {
+                                    keyCode = latinCode;
+                                    ic.deleteSurroundingText(1, 0);
+                                } else {
+                                    ic.commitText(currentText, 1);
+                                    ic.deleteSurroundingText(1, 0);
+                                    text += currentText;
+                                    return true;
+                                }
+                            } else if (sourceType == SourceType.Shuangpin) {
+                                Item item = helper.findItem(word);
+                                word = "";
+                                if (item != null) {
+                                    boolean isTrue = true;
+                                    for (char c: item.getValue().toCharArray()) {
+                                        System.out.println(c);
+                                        Integer latinCode = qwerty.get("" + c);
+                                        isTrue = isTrue && processKey(latinCode, true);
+                                    }
+                                    if (isTrue) {
+                                        ic.deleteSurroundingText(1, 0);
+                                    }
+                                    return isTrue;
+                                }
                             }
                         }
                     }

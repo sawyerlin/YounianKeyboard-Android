@@ -18,7 +18,6 @@ public class ShuangPinActivity extends Activity {
     private ArrayList<Item> gridArray;
     private ShuangPinAdapter adapter;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,10 +35,15 @@ public class ShuangPinActivity extends Activity {
         buttonAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                final Item item = new Item(editTextKey.getText().toString(), editTextValue.getText().toString());
-                adapter.add(item);
-                adapter.notifyDataSetChanged();
-                helper.insertItem(item);
+                Item item = new Item(editTextKey.getText().toString(),
+                        editTextValue.getText().toString());
+                if(helper.insertItem(item)) {
+                    adapter.insert(item, 0);
+                    adapter.notifyDataSetChanged();
+                    editTextKey.setText("");
+                    editTextValue.setText("");
+                    editTextKey.requestFocus();
+                }
             }
         });
     }

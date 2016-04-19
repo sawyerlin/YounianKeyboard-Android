@@ -1,42 +1,22 @@
 [
     {
-        "merged": "/home/slin/AndroidStudioProjects/PinyinIME1/app/build/intermediates/res/merged/debug/layout/candidates_container.xml",
-        "source": "/home/slin/AndroidStudioProjects/PinyinIME1/app/src/main/res/layout/candidates_container.xml"
+        "merged": "/home/slin/AndroidStudioProjects/YounianKeyboard-Android/app/build/intermediates/res/merged/debug/layout/candidates_container.xml",
+        "source": "/home/slin/AndroidStudioProjects/YounianKeyboard-Android/app/src/main/res/layout/candidates_container.xml"
     },
     {
-        "merged": "/home/sawyer/StudioProjects/YounianKeyboard-Android/app/build/intermediates/res/merged/debug/layout/shuangpin_item.xml",
-        "source": "/home/sawyer/StudioProjects/YounianKeyboard-Android/app/src/main/res/layout/shuangpin_item.xml"
+        "merged": "/home/slin/AndroidStudioProjects/YounianKeyboard-Android/app/build/intermediates/res/merged/debug/layout/shuangpin_settings.xml",
+        "source": "/home/slin/AndroidStudioProjects/YounianKeyboard-Android/app/src/main/res/layout/shuangpin_settings.xml"
     },
     {
-        "merged": "/home/sawyer/StudioProjects/YounianKeyboard-Android/app/build/intermediates/res/merged/debug/layout/candidates_container.xml",
-        "source": "/home/sawyer/StudioProjects/YounianKeyboard-Android/app/src/main/res/layout/candidates_container.xml"
+        "merged": "/home/slin/AndroidStudioProjects/YounianKeyboard-Android/app/build/intermediates/res/merged/debug/layout/floating_container.xml",
+        "source": "/home/slin/AndroidStudioProjects/YounianKeyboard-Android/app/src/main/res/layout/floating_container.xml"
     },
     {
-        "merged": "/home/sawyer/StudioProjects/YounianKeyboard-Android/app/build/intermediates/res/merged/debug/layout/skb_container.xml",
-        "source": "/home/sawyer/StudioProjects/YounianKeyboard-Android/app/src/main/res/layout/skb_container.xml"
+        "merged": "/home/slin/AndroidStudioProjects/YounianKeyboard-Android/app/build/intermediates/res/merged/debug/layout/skb_container.xml",
+        "source": "/home/slin/AndroidStudioProjects/YounianKeyboard-Android/app/src/main/res/layout/skb_container.xml"
     },
     {
-        "merged": "/home/slin/AndroidStudioProjects/PinyinIME1/app/build/intermediates/res/merged/debug/layout/shuangpin_item.xml",
-        "source": "/home/slin/AndroidStudioProjects/PinyinIME1/app/src/main/res/layout/shuangpin_item.xml"
-    },
-    {
-        "merged": "/home/sawyer/StudioProjects/YounianKeyboard-Android/app/build/intermediates/res/merged/debug/layout/floating_container.xml",
-        "source": "/home/sawyer/StudioProjects/YounianKeyboard-Android/app/src/main/res/layout/floating_container.xml"
-    },
-    {
-        "merged": "/home/slin/AndroidStudioProjects/PinyinIME1/app/build/intermediates/res/merged/debug/layout/skb_container.xml",
-        "source": "/home/slin/AndroidStudioProjects/PinyinIME1/app/src/main/res/layout/skb_container.xml"
-    },
-    {
-        "merged": "/home/slin/AndroidStudioProjects/PinyinIME1/app/build/intermediates/res/merged/debug/layout/shuangpin_settings.xml",
-        "source": "/home/slin/AndroidStudioProjects/PinyinIME1/app/src/main/res/layout/shuangpin_settings.xml"
-    },
-    {
-        "merged": "/home/slin/AndroidStudioProjects/PinyinIME1/app/build/intermediates/res/merged/debug/layout/floating_container.xml",
-        "source": "/home/slin/AndroidStudioProjects/PinyinIME1/app/src/main/res/layout/floating_container.xml"
-    },
-    {
-        "merged": "/home/sawyer/StudioProjects/YounianKeyboard-Android/app/build/intermediates/res/merged/debug/layout/shuangpin_settings.xml",
-        "source": "/home/sawyer/StudioProjects/YounianKeyboard-Android/app/src/main/res/layout/shuangpin_settings.xml"
+        "merged": "/home/slin/AndroidStudioProjects/YounianKeyboard-Android/app/build/intermediates/res/merged/debug/layout/shuangpin_item.xml",
+        "source": "/home/slin/AndroidStudioProjects/YounianKeyboard-Android/app/src/main/res/layout/shuangpin_item.xml"
     }
 ]

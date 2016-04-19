@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="x86"
+    api-level="23"
+    density="xxhdpi"
+    format="7"
+    timestamp="5731658456027" >
+
+    <task
+        name="javac"
+        duration="255" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="10" />
+    <task
+        name="verifier"
+        duration="1" />
+
+    <artifact
+        location="/home/slin/AndroidStudioProjects/YounianKeyboard-Android/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex"
+        type="DEX" />
+
+    <build timestamp="3765427137480" >
+        <artifact
+            location="/home/slin/AndroidStudioProjects/YounianKeyboard-Android/app/build/outputs/apk/app-debug.apk"
+            type="MAIN" />
+    </build>
+    <build timestamp="4482230518118" >
+        <artifact
+            location="/home/slin/AndroidStudioProjects/YounianKeyboard-Android/app/build/intermediates/res/resources-debug.ap_"
+            type="RESOURCES" />
+    </build>
+    <build timestamp="5731658456027" >
+        <artifact
+            location="/home/slin/AndroidStudioProjects/YounianKeyboard-Android/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex"
+            type="DEX" />
+    </build>
+
+</instant-run>
