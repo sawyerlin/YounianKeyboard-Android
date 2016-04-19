@@ -33,6 +33,63 @@ public class ShuangPinDbHelper extends SQLiteOpenHelper {
     public static synchronized ShuangPinDbHelper getInstance(Context context) {
         if (instance == null) {
             instance = new ShuangPinDbHelper(context.getApplicationContext());
+            // Default values
+            ArrayList<Item> items = new ArrayList<Item>();
+            items.add(new Item("11", "q"));
+            items.add(new Item("12", "w"));
+            items.add(new Item("13", "e"));
+            items.add(new Item("14", "r"));
+            items.add(new Item("15", "t"));
+            items.add(new Item("16", "y"));
+            items.add(new Item("17", "sh"));
+            items.add(new Item("18", "ch"));
+            items.add(new Item("19", "p"));
+            items.add(new Item("20", "a"));
+            items.add(new Item("21", "s"));
+            items.add(new Item("22", "d"));
+            items.add(new Item("23", "f"));
+            items.add(new Item("24", "g"));
+            items.add(new Item("25", "h"));
+            items.add(new Item("26", "j"));
+            items.add(new Item("27", "k"));
+            items.add(new Item("28", "l"));
+            items.add(new Item("29", "ing"));
+            items.add(new Item("30", "z"));
+            items.add(new Item("31", "x"));
+            items.add(new Item("32", "ch"));
+            items.add(new Item("33", "zh"));
+            items.add(new Item("34", "b"));
+            items.add(new Item("35", "n"));
+            items.add(new Item("36", "m"));
+            items.add(new Item("37", "iu"));
+            items.add(new Item("38", "ia"));
+            items.add(new Item("39", "uan"));
+            items.add(new Item("40", "ue"));
+            items.add(new Item("41", "uai"));
+            items.add(new Item("42", "ia"));
+            items.add(new Item("43", "o"));
+            items.add(new Item("44", "un"));
+            items.add(new Item("45", "ong"));
+            items.add(new Item("46", "uang"));
+            items.add(new Item("47", "en"));
+            items.add(new Item("48", "eng"));
+            items.add(new Item("49", "ang"));
+            items.add(new Item("50", "an"));
+            items.add(new Item("51", "ao"));
+            items.add(new Item("52", "ai"));
+            items.add(new Item("53", "ei"));
+            items.add(new Item("54", "ie"));
+            items.add(new Item("55", "iao"));
+            items.add(new Item("56", "ui"));
+            items.add(new Item("57", "ou"));
+            items.add(new Item("58", "ing"));
+            items.add(new Item("59", "ian"));
+            items.add(new Item("60", "ua"));
+            items.add(new Item("61", "er"));
+            items.add(new Item("62", "uo"));
+            items.add(new Item("63", "iong"));
+            items.add(new Item("64", "iang"));
+            instance.insertItems(items);
         }
         return instance;
     }
@@ -44,67 +101,34 @@ public class ShuangPinDbHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
         sqLiteDatabase.execSQL(SQL_CREATE_SHUANGPINS);
-        // Default values
-        insertItem(new Item("11", "q"));
-        insertItem(new Item("12", "w"));
-        insertItem(new Item("13", "e"));
-        insertItem(new Item("14", "r"));
-        insertItem(new Item("15", "t"));
-        insertItem(new Item("16", "y"));
-        insertItem(new Item("17", "sh"));
-        insertItem(new Item("18", "ch"));
-        insertItem(new Item("19", "p"));
-        insertItem(new Item("20", "a"));
-        insertItem(new Item("21", "s"));
-        insertItem(new Item("22", "d"));
-        insertItem(new Item("23", "f"));
-        insertItem(new Item("24", "g"));
-        insertItem(new Item("25", "h"));
-        insertItem(new Item("26", "j"));
-        insertItem(new Item("27", "k"));
-        insertItem(new Item("28", "l"));
-        insertItem(new Item("29", "ing"));
-        insertItem(new Item("30", "z"));
-        insertItem(new Item("31", "x"));
-        insertItem(new Item("32", "ch"));
-        insertItem(new Item("33", "zh"));
-        insertItem(new Item("34", "b"));
-        insertItem(new Item("35", "n"));
-        insertItem(new Item("36", "m"));
-        insertItem(new Item("37", "iu"));
-        insertItem(new Item("38", "ia"));
-        insertItem(new Item("39", "uan"));
-        insertItem(new Item("40", "ue"));
-        insertItem(new Item("41", "uai"));
-        insertItem(new Item("42", "ia"));
-        insertItem(new Item("43", "o"));
-        insertItem(new Item("44", "un"));
-        insertItem(new Item("45", "ong"));
-        insertItem(new Item("46", "uang"));
-        insertItem(new Item("47", "en"));
-        insertItem(new Item("48", "eng"));
-        insertItem(new Item("49", "ang"));
-        insertItem(new Item("50", "an"));
-        insertItem(new Item("51", "ao"));
-        insertItem(new Item("52", "ai"));
-        insertItem(new Item("53", "ei"));
-        insertItem(new Item("54", "ie"));
-        insertItem(new Item("55", "iao"));
-        insertItem(new Item("56", "ui"));
-        insertItem(new Item("57", "ou"));
-        insertItem(new Item("58", "ing"));
-        insertItem(new Item("59", "ian"));
-        insertItem(new Item("60", "ua"));
-        insertItem(new Item("61", "er"));
-        insertItem(new Item("62", "uo"));
-        insertItem(new Item("63", "iong"));
-        insertItem(new Item("64", "iang"));
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
         sqLiteDatabase.execSQL(SQL_DELETE_SHUANGPIN);
         onCreate(sqLiteDatabase);
+    }
+
+    public boolean insertItems(ArrayList<Item> items) {
+        SQLiteDatabase db = getWritableDatabase();
+
+        boolean isSuccess = true;
+        db.beginTransaction();
+        try{
+            for(Item item : items) {
+                ContentValues values = new ContentValues();
+                values.put(ShuangPinEntry.COLUMN_NAME_KEY, item.key);
+                values.put(ShuangPinEntry.COLUMN_NAME_VALUE, item.value);
+                db.insertOrThrow(ShuangPinEntry.TABLE_NAME, null, values);
+            }
+            db.setTransactionSuccessful();
+        } catch (Exception e) {
+            System.out.print(e.getMessage());
+            isSuccess = false;
+        } finally {
+            db.endTransaction();
+        }
+        return isSuccess;
     }
 
     public boolean insertItem(Item item) {

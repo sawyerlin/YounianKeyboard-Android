@@ -1,6 +1,6 @@
 /*
  * This file is auto-generated.  DO NOT MODIFY.
- * Original file: /home/slin/AndroidStudioProjects/YounianKeyboard-Android/app/src/main/aidl/com/android/inputmethod/younian/IPinyinDecoderService.aidl
+ * Original file: /home/sawyer/StudioProjects/YounianKeyboard-Android/app/src/main/aidl/com/android/inputmethod/younian/IPinyinDecoderService.aidl
  */
 package com.android.inputmethod.younian;
 // Declare any non-default types here with import statements
