@@ -1,11 +1,11 @@
 [
     {
-        "merged": "/home/sawyer/StudioProjects/YounianKeyboard-Android/app/build/intermediates/res/merged/debug/drawable/search_popup_icon.png",
-        "source": "/home/sawyer/StudioProjects/YounianKeyboard-Android/app/src/main/res/drawable/search_popup_icon.png"
-    },
-    {
         "merged": "/home/slin/AndroidStudioProjects/YounianKeyboard-Android/app/build/intermediates/res/merged/debug/drawable/emotion_icon_22.png",
         "source": "/home/slin/AndroidStudioProjects/YounianKeyboard-Android/app/src/main/res/drawable/emotion_icon_22.png"
+    },
+    {
+        "merged": "/home/sawyer/StudioProjects/YounianKeyboard-Android/app/build/intermediates/res/merged/debug/drawable/search_popup_icon.png",
+        "source": "/home/sawyer/StudioProjects/YounianKeyboard-Android/app/src/main/res/drawable/search_popup_icon.png"
     },
     {
         "merged": "/home/slin/AndroidStudioProjects/YounianKeyboard-Android/app/build/intermediates/res/merged/debug/drawable/emotion_icon_01_popup.png",
@@ -148,6 +148,10 @@
         "source": "/home/slin/AndroidStudioProjects/YounianKeyboard-Android/app/src/main/res/drawable/arrow_right.png"
     },
     {
+        "merged": "/home/slin/AndroidStudioProjects/YounianKeyboard-Android/app/build/intermediates/res/merged/debug/drawable/hand_bye.png",
+        "source": "/home/slin/AndroidStudioProjects/YounianKeyboard-Android/app/src/main/res/drawable/hand_bye.png"
+    },
+    {
         "merged": "/home/slin/AndroidStudioProjects/YounianKeyboard-Android/app/build/intermediates/res/merged/debug/drawable/numstar.png",
         "source": "/home/slin/AndroidStudioProjects/YounianKeyboard-Android/app/src/main/res/drawable/numstar.png"
     },
@@ -204,12 +208,12 @@
         "source": "/home/sawyer/StudioProjects/YounianKeyboard-Android/app/src/main/res/drawable/numstar.png"
     },
     {
-        "merged": "/home/slin/AndroidStudioProjects/YounianKeyboard-Android/app/build/intermediates/res/merged/debug/drawable/emotion_icon_21_popup.png",
-        "source": "/home/slin/AndroidStudioProjects/YounianKeyboard-Android/app/src/main/res/drawable/emotion_icon_21_popup.png"
-    },
-    {
         "merged": "/home/slin/AndroidStudioProjects/YounianKeyboard-Android/app/build/intermediates/res/merged/debug/drawable/emotion_icon_11_popup.png",
         "source": "/home/slin/AndroidStudioProjects/YounianKeyboard-Android/app/src/main/res/drawable/emotion_icon_11_popup.png"
+    },
+    {
+        "merged": "/home/slin/AndroidStudioProjects/YounianKeyboard-Android/app/build/intermediates/res/merged/debug/drawable/emotion_icon_21_popup.png",
+        "source": "/home/slin/AndroidStudioProjects/YounianKeyboard-Android/app/src/main/res/drawable/emotion_icon_21_popup.png"
     },
     {
         "merged": "/home/slin/AndroidStudioProjects/YounianKeyboard-Android/app/build/intermediates/res/merged/debug/drawable/candidates_vertical_line.png",
@@ -322,6 +326,10 @@
     {
         "merged": "/home/slin/AndroidStudioProjects/YounianKeyboard-Android/app/build/intermediates/res/merged/debug/drawable/emotion_icon_11.png",
         "source": "/home/slin/AndroidStudioProjects/YounianKeyboard-Android/app/src/main/res/drawable/emotion_icon_11.png"
+    },
+    {
+        "merged": "/home/slin/AndroidStudioProjects/YounianKeyboard-Android/app/build/intermediates/res/merged/debug/drawable/hand_shake.png",
+        "source": "/home/slin/AndroidStudioProjects/YounianKeyboard-Android/app/src/main/res/drawable/hand_shake.png"
     },
     {
         "merged": "/home/slin/AndroidStudioProjects/YounianKeyboard-Android/app/build/intermediates/res/merged/debug/drawable/candidates_area_bg.9.png",

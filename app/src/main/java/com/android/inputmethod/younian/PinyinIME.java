@@ -82,7 +82,6 @@ public class PinyinIME extends InputMethodService {
     private Environment mEnvironment;
 
     private String word = "";
-    private String text = "";
     private boolean isComposing = false;
     private SourceType sourceType = SourceType.Arabic;
     private static Cycle<SourceType> sourceTypeCycle;
@@ -225,6 +224,10 @@ public class PinyinIME extends InputMethodService {
         }
     };
 
+    private String getEmojiByUnicode(int unicode) {
+        return new String(Character.toChars(unicode));
+    }
+
     @Override
     public void onCreate() {
         helper = ShuangPinDbHelper.getInstance(getApplicationContext());
@@ -314,6 +317,17 @@ public class PinyinIME extends InputMethodService {
                 word += code;
                 if (this.isComposing) {
                     if (word.length() == 2) {
+                        if (word.equals("77") || word.equals("88")) {
+                            if (word.equals("77")) {
+                                ic.commitText(getEmojiByUnicode(0x1F44C), 1);
+                            } else if (word.equals("88")) {
+                                ic.commitText(getEmojiByUnicode(0x1F44B), 1);
+                            }
+                            word = "";
+                            ic.finishComposingText();
+                            this.isComposing = false;
+                            return true;
+                        }
                         if (word.equals("66")) {
                             keyCode = 66;
                             ic.finishComposingText();
@@ -331,7 +345,6 @@ public class PinyinIME extends InputMethodService {
                                 } else {
                                     ic.commitText(currentText, 1);
                                     ic.deleteSurroundingText(1, 0);
-                                    text += currentText;
                                     return true;
                                 }
                             } else if (sourceType == SourceType.Shuangpin) {
@@ -340,7 +353,6 @@ public class PinyinIME extends InputMethodService {
                                 if (item != null) {
                                     boolean isTrue = true;
                                     for (char c: item.getValue().toCharArray()) {
-                                        System.out.println(c);
                                         Integer latinCode = qwerty.get("" + c);
                                         isTrue = isTrue && processKey(latinCode, true);
                                     }
@@ -360,30 +372,54 @@ public class PinyinIME extends InputMethodService {
             } else {
                 if (keyCode == 62) {
                     if (this.isComposing) {
-                        if (sourceType == SourceType.Latin && word.equals("55")) {
+                        if (word.length() == 2) {
+                            if (word.equals("77") || word.equals("88")) {
+                                if (word.equals("77")) {
+                                    ic.commitText(getEmojiByUnicode(0x1F44C), 1);
+                                } else if (word.equals("88")) {
+                                    ic.commitText(getEmojiByUnicode(0x1F44B), 1);
+                                }
+                                word = "";
+                                ic.finishComposingText();
+                                this.isComposing = false;
+                                return true;
+                            }
+                            if (sourceType == SourceType.Latin && word.equals("55")) {
+                                word = "";
+                                ic.finishComposingText();
+                                ic.deleteSurroundingText(1, 0);
+                                CAP = true;
+                                this.isComposing = false;
+                                return true;
+                            }
+                            String currentText = Source.findValue(sourceType, word);
+                            if (CAP) {
+                                currentText = currentText.toUpperCase();
+                                CAP = false;
+                            }
+                            ic.commitText(currentText, 1);
                             word = "";
                             ic.finishComposingText();
-                            ic.deleteSurroundingText(1, 0);
-                            CAP = true;
                             this.isComposing = false;
                             return true;
                         }
-                        String currentText = Source.findValue(sourceType, word);
-                        if (CAP) {
-                            currentText = currentText.toUpperCase();
-                            CAP = false;
-                        }
-                        text += currentText;
-                        word = "";
-                        ic.finishComposingText();
-                        this.isComposing = false;
-                        return true;
                     }
                 } else {
                     char code = event.getDisplayLabel();
                     word += code;
                     if (this.isComposing) {
                         if (word.length() == 2) {
+                            if (word.equals("77") || word.equals("88")) {
+                                if (word.equals("77")) {
+                                    ic.commitText(getEmojiByUnicode(0x1F44C), 1);
+                                } else if (word.equals("88")) {
+                                    ic.commitText(getEmojiByUnicode(0x1F44B), 1);
+                                }
+                                word = "";
+                                ic.finishComposingText();
+                                this.isComposing = false;
+                                return true;
+                            }
                             if (word.equals("66")) {
                                 keyCode = 66;
                                 ic.finishComposingText();
@@ -402,7 +438,6 @@ public class PinyinIME extends InputMethodService {
                                     currentText = currentText.toUpperCase();
                                     CAP = false;
                                 }
-                                text += currentText;
                                 word = "";
                                 ic.commitText(currentText, 1);
                                 ic.finishComposingText();
