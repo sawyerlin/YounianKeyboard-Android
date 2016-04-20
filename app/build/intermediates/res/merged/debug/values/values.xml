@@ -11,11 +11,11 @@
     <color name="label_color_hl0">#ffffffff</color>
     <color name="recommended_candidate_color">#ffe35900</color>
     <dimen name="candview_background_padding">0dip</dimen>
-    <string name="ime_name">友年输入法</string>
-    <string name="ime_settings_activity_name">友年输入法设置</string>
-    <string name="ime_shuangpin_activity_name">友年输入法设置SHUANG</string>
+    <string name="ime_name">国际通用数字键盘</string>
+    <string name="ime_settings_activity_name">国际通用数字键盘设置</string>
+    <string name="ime_shuangpin_activity_name">国际通用数字键盘双拼设置</string>
     <string name="inputMethod"/>
-    <string name="setting">友年输入法设置</string>
+    <string name="setting">国际通用数字键盘设置</string>
     <string name="setting_advanced_key">setting_advanced_key</string>
     <string name="setting_disabled">关闭</string>
     <string name="setting_enabled">开启</string>
@@ -24,7 +24,7 @@
     <string name="setting_prediction_key">setting_prediction_key</string>
     <string name="setting_prediction_title">联想输入</string>
     <string name="setting_shuangpin_key">setting_shuangpin_key</string>
-    <string name="setting_shuangpin_title">双拼</string>
+    <string name="setting_shuangpin_title">双拼自定义键盘</string>
     <string name="setting_sound_key">setting_sound_key</string>
     <string name="setting_sound_key_title">按键声音</string>
     <string name="setting_switch_key">setting_switch_key</string>

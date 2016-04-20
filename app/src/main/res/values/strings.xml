@@ -14,9 +14,9 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="ime_name">友年输入法</string>
-    <string name="ime_settings_activity_name">友年输入法设置</string>
-    <string name="ime_shuangpin_activity_name">友年输入法设置SHUANG</string>
+    <string name="ime_name">国际通用数字键盘</string>
+    <string name="ime_settings_activity_name">国际通用数字键盘设置</string>
+    <string name="ime_shuangpin_activity_name">国际通用数字键盘双拼设置</string>
     <!-- version = apk(java) + ime engine + sys dict + [hotlist (TBD)] -->
     <string name="version">1.0.0</string>
 
@@ -47,11 +47,11 @@
     <string name="setting_shuangpin_key">setting_shuangpin_key</string>
     <string name="setting_advanced_key">setting_advanced_key</string>
 
-	<string name="setting">友年输入法设置</string>
+	<string name="setting">国际通用数字键盘设置</string>
     <string name="setting_sound_key_title">按键声音</string>
     <string name="setting_vibrate_title">按键震动</string>
     <string name="setting_prediction_title">联想输入</string>
-    <string name="setting_shuangpin_title">双拼</string>
+    <string name="setting_shuangpin_title">双拼自定义键盘</string>
     <string name="setting_switch_title">中英文切换</string>
     <string name="setting_switch_shift_space_title">Shift-space</string>
 

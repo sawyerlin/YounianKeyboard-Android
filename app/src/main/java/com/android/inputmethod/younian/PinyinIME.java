@@ -303,6 +303,11 @@ public class PinyinIME extends InputMethodService {
             return true;
         }
 
+        if (keyCode == 81) {
+            launchSettings();
+            return true;
+        }
+
         if (keyCode != 67) {
             if (sourceType == SourceType.Quanpin || sourceType == SourceType.Shuangpin) {
                 char code = event.getDisplayLabel();
@@ -1360,7 +1365,6 @@ public class PinyinIME extends InputMethodService {
     }
 
     private void launchSettings() {
-        System.out.println("Test slin");
         Intent intent = new Intent();
         intent.setClass(PinyinIME.this, SettingsActivity.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
