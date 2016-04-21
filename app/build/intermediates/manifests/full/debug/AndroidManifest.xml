@@ -59,7 +59,8 @@
         </activity>
         <activity
             android:name="com.android.inputmethod.younian.ShuangPinActivity"
-            android:label="@string/ime_shuangpin_activity_name" >
+            android:label="@string/ime_shuangpin_activity_name"
+            android:windowSoftInputMode="stateAlwaysHidden" >
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
             </intent-filter>

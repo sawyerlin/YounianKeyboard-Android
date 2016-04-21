@@ -17,13 +17,11 @@
 #include <assert.h>
 #include <jni.h>
 #include <string.h>
-#include <sys/types.h>
 #include <unistd.h>
 #include <android/log.h>
 
 #include "../include/pinyinime.h"
 #include "../include/sync.h"
-#include "../include/userdict.h"
 
 #ifdef __cplusplus
 extern "C" {

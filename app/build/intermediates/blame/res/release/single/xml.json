@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "/home/slin/AndroidStudioProjects/YounianKeyboard-Android/app/build/intermediates/res/merged/release/xml/skb_phone.xml",
+        "source": "/home/slin/AndroidStudioProjects/YounianKeyboard-Android/app/src/main/res/xml/skb_phone.xml"
+    },
+    {
+        "merged": "/home/slin/AndroidStudioProjects/YounianKeyboard-Android/app/build/intermediates/res/merged/release/xml/method.xml",
+        "source": "/home/slin/AndroidStudioProjects/YounianKeyboard-Android/app/src/main/res/xml/method.xml"
+    },
+    {
+        "merged": "/home/slin/AndroidStudioProjects/YounianKeyboard-Android/app/build/intermediates/res/merged/release/xml/skb_smiley.xml",
+        "source": "/home/slin/AndroidStudioProjects/YounianKeyboard-Android/app/src/main/res/xml/skb_smiley.xml"
+    },
+    {
+        "merged": "/home/slin/AndroidStudioProjects/YounianKeyboard-Android/app/build/intermediates/res/merged/release/xml/skb_sym1.xml",
+        "source": "/home/slin/AndroidStudioProjects/YounianKeyboard-Android/app/src/main/res/xml/skb_sym1.xml"
+    },
+    {
+        "merged": "/home/slin/AndroidStudioProjects/YounianKeyboard-Android/app/build/intermediates/res/merged/release/xml/skb_qwerty.xml",
+        "source": "/home/slin/AndroidStudioProjects/YounianKeyboard-Android/app/src/main/res/xml/skb_qwerty.xml"
+    },
+    {
+        "merged": "/home/slin/AndroidStudioProjects/YounianKeyboard-Android/app/build/intermediates/res/merged/release/xml/settings.xml",
+        "source": "/home/slin/AndroidStudioProjects/YounianKeyboard-Android/app/src/main/res/xml/settings.xml"
+    },
+    {
+        "merged": "/home/slin/AndroidStudioProjects/YounianKeyboard-Android/app/build/intermediates/res/merged/release/xml/skb_template1.xml",
+        "source": "/home/slin/AndroidStudioProjects/YounianKeyboard-Android/app/src/main/res/xml/skb_template1.xml"
+    },
+    {
+        "merged": "/home/slin/AndroidStudioProjects/YounianKeyboard-Android/app/build/intermediates/res/merged/release/xml/skb_sym2.xml",
+        "source": "/home/slin/AndroidStudioProjects/YounianKeyboard-Android/app/src/main/res/xml/skb_sym2.xml"
+    }
+]

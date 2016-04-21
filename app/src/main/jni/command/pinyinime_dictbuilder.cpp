@@ -14,11 +14,7 @@
  * limitations under the License.
  */
 
-#include <assert.h>
-#include <stdlib.h>
 #include <stdio.h>
-#include <time.h>
-#include <unistd.h>
 #include "../include/dicttrie.h"
 
 using namespace ime_pinyin;

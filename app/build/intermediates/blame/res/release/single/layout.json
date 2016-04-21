@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/home/slin/AndroidStudioProjects/YounianKeyboard-Android/app/build/intermediates/res/merged/release/layout/skb_container.xml",
+        "source": "/home/slin/AndroidStudioProjects/YounianKeyboard-Android/app/src/main/res/layout/skb_container.xml"
+    },
+    {
+        "merged": "/home/slin/AndroidStudioProjects/YounianKeyboard-Android/app/build/intermediates/res/merged/release/layout/floating_container.xml",
+        "source": "/home/slin/AndroidStudioProjects/YounianKeyboard-Android/app/src/main/res/layout/floating_container.xml"
+    },
+    {
+        "merged": "/home/slin/AndroidStudioProjects/YounianKeyboard-Android/app/build/intermediates/res/merged/release/layout/shuangpin_settings.xml",
+        "source": "/home/slin/AndroidStudioProjects/YounianKeyboard-Android/app/src/main/res/layout/shuangpin_settings.xml"
+    },
+    {
+        "merged": "/home/slin/AndroidStudioProjects/YounianKeyboard-Android/app/build/intermediates/res/merged/release/layout/candidates_container.xml",
+        "source": "/home/slin/AndroidStudioProjects/YounianKeyboard-Android/app/src/main/res/layout/candidates_container.xml"
+    },
+    {
+        "merged": "/home/slin/AndroidStudioProjects/YounianKeyboard-Android/app/build/intermediates/res/merged/release/layout/shuangpin_item.xml",
+        "source": "/home/slin/AndroidStudioProjects/YounianKeyboard-Android/app/src/main/res/layout/shuangpin_item.xml"
+    }
+]

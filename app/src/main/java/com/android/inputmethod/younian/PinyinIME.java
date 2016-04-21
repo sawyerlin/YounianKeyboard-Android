@@ -71,7 +71,7 @@ public class PinyinIME extends InputMethodService {
     static final String TAG = "PinyinIME";
 
     /**
-     * If is is true, IME will simulate key events for delete key, and send the
+     * If it is true, IME will simulate key events for delete key, and send the
      * events back to the application.
      */
     private static final boolean SIMULATE_KEY_DELETE = true;
@@ -306,8 +306,9 @@ public class PinyinIME extends InputMethodService {
             return true;
         }
 
-        if (keyCode == 81) {
+        if (keyCode == 81) { // load settings
             launchSettings();
+            this.hideWindow();
             return true;
         }
 
@@ -1372,10 +1373,9 @@ public class PinyinIME extends InputMethodService {
         builder.setIcon(R.drawable.app_icon);
         builder.setNegativeButton(android.R.string.cancel, null);
         CharSequence itemSettings = getString(R.string.ime_settings_activity_name);
-        CharSequence itemInputMethod = "";//getString(com.android.internal.R.string.inputMethod);
+        CharSequence itemInputMethod = "";
         builder.setItems(new CharSequence[] {itemSettings, itemInputMethod},
                 new DialogInterface.OnClickListener() {
-
                     public void onClick(DialogInterface di, int position) {
                         di.dismiss();
                         switch (position) {

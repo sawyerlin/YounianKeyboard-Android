@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:weightSum="1">
 
@@ -10,13 +11,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <EditText
+        <com.android.inputmethod.younian.SliEditText
             android:layout_width="0dip"
             android:layout_weight="0.4"
             android:layout_height="wrap_content"
             android:id="@+id/editTextKey" />
 
-        <EditText
+        <com.android.inputmethod.younian.SliEditText
             android:layout_width="0dip"
             android:layout_height="wrap_content"
             android:id="@+id/editTextValue"
@@ -32,8 +33,9 @@
 
     <GridView
         android:layout_width="match_parent"
-        android:layout_height="326dp"
+        android:layout_height="258dp"
         android:id="@+id/gridView"
-        tools:listitem="@android:layout/simple_list_item_2" />
+        tools:listitem="@android:layout/simple_list_item_2"
+        android:layout_weight="0.03" />
 
 </LinearLayout>

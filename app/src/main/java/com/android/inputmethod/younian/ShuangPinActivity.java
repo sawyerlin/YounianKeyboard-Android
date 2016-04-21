@@ -28,8 +28,8 @@ public class ShuangPinActivity extends Activity {
         adapter = new ShuangPinAdapter(this, R.layout.shuangpin_item, gridArray, helper);
         gridView.setAdapter(adapter);
 
-        final EditText editTextKey = (EditText) findViewById(R.id.editTextKey);
-        final EditText editTextValue = (EditText) findViewById(R.id.editTextValue);
+        final SliEditText editTextKey = (SliEditText) findViewById(R.id.editTextKey);
+        final SliEditText editTextValue = (SliEditText) findViewById(R.id.editTextValue);
         Button buttonAdd = (Button) findViewById(R.id.buttonAdd);
 
         buttonAdd.setOnClickListener(new View.OnClickListener() {

@@ -98,14 +98,6 @@ public class SettingsActivity extends PreferenceActivity implements
         mKeySoundPref.setChecked(Settings.getKeySound());
         mVibratePref.setChecked(Settings.getVibrate());
         mPredictionPref.setChecked(Settings.getPrediction());
-        mShuangpinPref.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
-
-            @Override
-            public boolean onPreferenceClick(Preference preference) {
-                System.out.println("on preference click");
-                return false;
-            }
-        });
     }
 
     public void updatePreference(PreferenceGroup parentPref, String prefKey) {

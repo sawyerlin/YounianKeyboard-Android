@@ -7,7 +7,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 
 import com.android.inputmethod.younian.source.Item;
@@ -37,7 +36,7 @@ public class ShuangPinAdapter extends ArrayAdapter<Item> {
             gridView = inflater.inflate(layoutResourceId, parent, false);
         }
         TextView textViewKey = (TextView)gridView.findViewById(R.id.textViewKey);
-        EditText editTextValue = (EditText)gridView.findViewById(R.id.editTextValue);
+        SliEditText editTextValue = (SliEditText)gridView.findViewById(R.id.editTextValue);
         Button buttonOk = (Button)gridView.findViewById(R.id.buttonOk);
         Button buttonDel = (Button)gridView.findViewById(R.id.buttonDel);
         buttonDel.setTag(new Integer(position));
